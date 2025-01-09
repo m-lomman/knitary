@@ -1,0 +1,3 @@
+k, k, k, k, k, k, k, k, k, k, k, k, k
+p, p, k, p, p, k, p, p, k, p, p, k, p
+k, k, k, p, k, p, k, p, k, p, k, p, k
