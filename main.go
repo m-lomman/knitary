@@ -10,13 +10,13 @@ func main() {
 
 	patternContent := getPatternContent("testPattern.txt")
 	patternBinary := knitToBinary(patternContent)
-	println("\n" + patternContent)
+	fmt.Printf("\n" + patternContent)
 
 	println("\n\n" + patternBinary + "\n\n")
 
 	patternContent = getPatternContent("towelPattern.txt")
 	patternBinary = knitToBinary(patternContent)
-	println("\n" + patternContent)
+	fmt.Printf("\n" + patternContent)
 
 	println("\n\n" + patternBinary)
 }

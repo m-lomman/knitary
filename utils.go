@@ -10,6 +10,12 @@ import (
 const knit = 'k'
 const purl = 'p'
 
+var (
+	boldMagenta = "\x1b[1m\x1b[35m"
+	boldYellow  = "\x1b[1m\x1b[33m"
+	reset       = "\x1b[0m"
+)
+
 func getPatternContent(file string) string {
 	// get the file from patterns folder & read content
 	file = filepath.Join("patterns", file)
@@ -31,9 +37,9 @@ func knitToBinary(content string) string {
 	knitBinary := ""
 	for _, char := range content {
 		if char == knit {
-			knitBinary = knitBinary + "0 "
+			knitBinary = knitBinary + boldMagenta + "0 " + reset
 		} else if char == purl {
-			knitBinary = knitBinary + "1 "
+			knitBinary = knitBinary + boldYellow + "1 " + reset
 		} else if char == '\n' {
 			knitBinary = knitBinary + "\n"
 		} else {
